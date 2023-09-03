@@ -28,7 +28,7 @@ services:
     command: python manage.py migrate
 
   bot:
-    image: redkrane/diploma-todolist:latest
+    image: Amammadov/diploma-todolist:latest
     env_file: .env
     environment:
       DB_HOST: db
@@ -43,7 +43,7 @@ services:
 
   api:
     build: .
-    image: redkrane/diploma-todolist:latest
+    image: Amammadov/diploma-todolist:
     env_file: .env
     environment:
       DB_HOST: db
